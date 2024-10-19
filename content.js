@@ -1,0 +1,1 @@
+// Content script remains the same as in the previous version

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoIP Assistant with SIP</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <h1>VoIP Assistant with SIP</h1>
+    <div id="sip-config">
+      <h2>SIP Configuration</h2>
+      <input type="text" id="sip-server" placeholder="SIP Server (e.g., sip:example.com)">
+      <input type="text" id="sip-username" placeholder="SIP Username">
+      <input type="password" id="sip-password" placeholder="SIP Password">
+      <input type="text" id="sip-display-name" placeholder="Display Name (optional)">
+      <button id="connect-btn">Connect to SIP Server</button>
+    </div>
+    <div id="call-controls">
+      <input type="text" id="remote-uri" placeholder="Remote SIP URI">
+      <button id="call-btn" disabled>Start Call</button>
+      <button id="hangup-btn" disabled>End Call</button>
+    </div>
+    <!-- Rest of the HTML remains the same -->
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/sip.js@0.20.0/dist/sip.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
